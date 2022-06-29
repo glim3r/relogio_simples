@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {  /* seleciona todos os elementos do CSS  */
+
+    margin: 0;      /* margem  */
+    padding: 0;     /* espaçamento inicial  */
+    font-family: 'Open Sans', sans-serif; 
+}
+
+body{
+    height: 100vh;    /* altura */
+    background: linear-gradient(120deg, #00FFFF, #FF00FF);      /* deixa o fundo degradê  */
+    align-items: center;        /* alinhar itens  */
+    display: flex;              /* deixa a tela flexivel p alinhamento */
+    justify-content: center;    /* alinha tudo no centro  */
+
+
+}   
+
+.relogio{    /* esse .relogio seleciona e altera APENAS A CLASS= "relogio" */
+
+    display: flex;
+    justify-content: space-around;  /* espaçamento entre os itens  */
+    align-items: center;
+    height: 200px;
+    width: 550px;   /* largura  */
+    background: transparent;        /* deixa o fundo transparente */
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);  /* faz uma caixa degradê */
+}
+
+.relogio div{   /* esse .relogio div seleciona e altera TODOS os itens da DIV */
+
+    height: 170px; /* altura */
+    width: 150px;  /* largura */
+    display: flex;
+    flex-direction: column;  /* alinha os itens um embaixo do outro */
+    align-items: center;     /* alinha os itens */
+    justify-content: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .9); /* fundo das caixinhas do relogio */
+    border-radius: 7px;  /* deixa as bordas arredondadas */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    letter-spacing: 3px;  /* espaçamento entre LETRAS ou numeros */
+}
+
+.relogio span{  /* pega apenas os SPANS */
+
+    font-weight: bolder;  /* engrossa ou afina as letras (largura) */
+    font-size: 60px;
+}
+
+.relogio span.tempo{   /* pega todos os spans da CLASS="tempo"  */
+
+    font-size: 10px;   /* tamanho das fontes de horas, minutos e segundos */
+
+
+
+}
